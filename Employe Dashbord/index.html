@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="img/png" href="./icons8-employee-64.png">
+
+    <!-- <Google-Front> -->
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200..900&display=swap " rel="stylesheet">
+        <!-- icon -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+    <div class="container">
+        <!-- sidebar -->
+         <aside>
+         <h2 class="logo">EmployeeHub</h2>
+
+         <ul>
+            <li><i class="fa-solid fa-house"></i>Dashboard</li>
+            <li><i class="fa-solid fa-users"></i>Employee</li>
+            <li><i class="fa-solid fa-building"></i>Department</li>
+            <li><i class="fa-solid fa-chart-line"></i>reports</li>
+            <li><i class="fa-solid fa-gear"></i>Setting</li>
+            <li><i class="fa-solid fa-right-from-bracket"></i>Logout</li>
+         </ul>
+         </aside>
+
+         <main class="main-content">
+            <!-- Navbar -->
+             <header class="navbar">
+                <input type="text" placeholder="search Employee">
+
+                <div class="profile">
+                    <i class="fa-solid fa-bell"></i>
+                    <img src="https://i.pravatar.cc/40" alt="user image">
+                    <span>Admi </span>
+
+                </div>
+
+             </header>
+             <!-- DashboardTitle -->
+              <h1>Dashboard Overview</h1>
+
+              <!-- Cards -->
+               <section class="Cards">
+
+                <div class="card">
+                    <h3>Total Employee</h3>
+                    <p>250</p>
+                </div>
+
+                <div class="card">
+                    <h3>Active Employee</h3>
+                    <p>200</p>
+                </div>
+
+                <div class="card">
+                    <h3>On Leave</h3>
+                    <p>18</p>
+                </div>
+
+                <div class="card">
+                    <h3>Department</h3>
+                    <p>10</p>
+                </div>
+                </section>
+
+                <!-- table -->
+                 <section class="Employee-section">
+
+                    <div>
+
+                        <h2>Employee List</h2>
+                        <button>Add Employee</button>
+                    </div>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Department</th>
+                                <th>Salary</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Avi</td>
+                                <td>Developer</td>
+                                <td>50,000</td>
+                                <td><span class="Status active">Active</span></td>
+                                <td>
+                                    <button>Edit</button>
+                                    <button>Delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+
+
+                 </section>
+
+
+
+            </main>
+         </div>
+    
+</body>
+</html>
