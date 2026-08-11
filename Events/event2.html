@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mydiv{
+            margin-top: 15px;
+            width: 200px;
+            height: 200px;
+            background-color: brown;
+            overflow: auto;
+        }
+        .content{
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Welcome to Event</h2>
+
+    <input id="myinput" placeholder="Type somrthing">
+    <div id = "mydiv">
+        <div class ="content "> scroll inside me</div>
+    </div>
+    <script>
+        const  input = document.getElementById("myinput")
+        const div = document.getElementById("mydiv")
+
+        // 1. keyup - when key is realeased u get output
+        // input .addEventListener('keydup',function(q){
+        //     console.log('Key Released -' + q.key)
+        // })
+
+        // 2. keydown - when key is pressed u get the output
+        //  input .addEventListener('keydown',function(q){
+        //     console.log('Key Pressed -' + q.key)
+        // })
+
+        // 
+
+           input .addEventListener('change',function(w){
+            console.log('value of Input -' + w.target.value)
+        })
+    </script>
+</body>
+</html>
